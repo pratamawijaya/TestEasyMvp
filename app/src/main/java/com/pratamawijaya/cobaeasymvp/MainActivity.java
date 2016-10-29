@@ -13,11 +13,11 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    presenter.testClick();
   }
 
   @Override protected void onStart() {
     super.onStart();
+    presenter.testClick();
   }
 
   @Override protected void onStop() {
