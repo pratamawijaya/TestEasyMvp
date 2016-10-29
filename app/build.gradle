@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
-apply plugin: 'easymvp'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'easymvp'
 
 android {
   compileSdkVersion 24
@@ -28,7 +28,7 @@ dependencies {
   })
   compile 'com.android.support:appcompat-v7:24.2.1'
   testCompile 'junit:junit:4.12'
-  apt 'com.google.dagger:dagger-compiler:2.7'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.7'
   compile 'com.google.dagger:dagger:2.7'
   provided 'javax.annotation:jsr250-api:1.0'
 }
